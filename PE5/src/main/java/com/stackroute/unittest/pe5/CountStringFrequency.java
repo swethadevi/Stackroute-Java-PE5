@@ -14,7 +14,6 @@ import java.util.regex.Pattern;
  */
 public class CountStringFrequency {
     public Map<String,Integer> CountFreqOfWords(String match){
-        //    str = "one one -one___two,,three,one @three*one?two";
         String strRegexOne="one";
         String strRegexTwo="two";
         String strRegexThree="three";
