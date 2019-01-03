@@ -46,15 +46,15 @@ public class ArrayStringToMapTest {
         System.out.println(map);
         assertEquals(map,obj.checkWordsOccurence(arr));
     }
-//    @Test
-//    public void checkWordsOccurence2(){
-//        String  arr[] ={"IBM","NIIT","NIIT","Oracle","NIIT","Boeing"};
-//        Map<String,Boolean> map=new HashMap<String,Boolean>();
-//        map.put("Boeing",true);
-//        map.put("IBM",false);
-//        map.put("NIIT",false);
-//        map.put("Oracle",false);
-//        System.out.println(map);
-//        assertNotEquals(map,obj.checkWordsOccurence(arr));
-//    }
+    @Test
+    public void checkWordsOccurence2(){
+        String  arr[] ={"IBM","NIIT","NIIT","Oracle","NIIT","Boeing"};
+        Map<String,Boolean> map=new HashMap<String,Boolean>();
+        map.put("Boeing",true);
+        map.put("IBM",false);
+        map.put("NIIT",false);
+        map.put("Oracle",false);
+        System.out.println(map);
+        assertNotEquals(map,obj.checkWordsOccurence(arr));
+    }
 }

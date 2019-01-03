@@ -40,4 +40,22 @@ public class SortSetIntoArrayTest {
         System.out.println(resSet);
         assertEquals(resSet,obj.sortArraySet(inputSet));
     }
-}
+
+    @Test
+    public void checkNullInput(){
+        Set<String> inputSet=new HashSet<String>();
+        //System.out.println(inputSet);
+        Set<String> resSet=new HashSet<String>();
+        //System.out.println(resSet);
+        assertNull("checkNullinput is failing ", obj.sortArraySet(inputSet));
+    }
+    @Test
+    public void checkNullInput1(){
+        Set<String> inputSet=new HashSet<String>();
+        //System.out.println(inputSet);
+        Set<String> resSet=new HashSet<String>();
+        //System.out.println(resSet);
+        assertNotNull("checkNullinput is failing ", obj.sortArraySet(inputSet));
+    }
+
+    }
