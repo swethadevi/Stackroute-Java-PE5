@@ -12,6 +12,10 @@ import java.util.*;
 
 public class SortSetIntoArray {
     public Set<String> sortArraySet(Set<String> set) {
+
+        if(set==null)
+            return null;
+
         List<String> list = new ArrayList<String>();
         list.addAll(set);
         Collections.sort(list);
